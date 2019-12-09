@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4edd97b1-fcb5-4662-9c7c-b029f334a7c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Advent2019/com/perlartifex/AdventDay01a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Advent2019/com/perlartifex/AdventDay03a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perlartifex/AdventDay08a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perlartifex/AdventDay08a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perlartifex/BlockLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perlartifex/BlockLine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/perlartifex/BlockPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/perlartifex/BlockPoint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +34,22 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.AdventDay03a">
+  <component name="RunManager" selected="Application.AdventDay08a">
     <configuration name="AdventDay03a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.perlartifex.AdventDay03a" />
+      <module name="AdventOfCode2019" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.perlartifex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdventDay08a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.perlartifex.AdventDay08a" />
       <module name="AdventOfCode2019" />
       <extension name="coverage">
         <pattern>
@@ -59,9 +73,11 @@
     <list>
       <item itemvalue="Application.AdventDay03a" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.AdventDay08a" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AdventDay08a" />
         <item itemvalue="Application.AdventDay03a" />
         <item itemvalue="Application.Main" />
       </list>
@@ -97,6 +113,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1575398593933" />
+    <state x="765" y="286" key="#com.intellij.ide.util.MemberChooser" timestamp="1575912862051">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="765" y="286" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1160@0.0.1920.1160" timestamp="1575912862051" />
     <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1575398585758">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -105,35 +125,35 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="739" y="324" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1575559386802" />
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom" timestamp="1575401130413">
+    <state width="1877" height="366" key="GridCell.Tab.0.bottom" timestamp="1575914624287">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1575400378336" />
-    <state width="1877" height="163" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1575401130413" />
-    <state width="1877" height="163" key="GridCell.Tab.0.center" timestamp="1575401130412">
+    <state width="1877" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1160@0.0.1920.1160" timestamp="1575914624287" />
+    <state width="1877" height="366" key="GridCell.Tab.0.center" timestamp="1575914624287">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1575400378336" />
-    <state width="1877" height="163" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1575401130412" />
-    <state width="1877" height="163" key="GridCell.Tab.0.left" timestamp="1575401130412">
+    <state width="1877" height="366" key="GridCell.Tab.0.center/0.0.1920.1160@0.0.1920.1160" timestamp="1575914624287" />
+    <state width="1877" height="366" key="GridCell.Tab.0.left" timestamp="1575914624287">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1575400378336" />
-    <state width="1877" height="163" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1575401130412" />
-    <state width="1877" height="163" key="GridCell.Tab.0.right" timestamp="1575401130413">
+    <state width="1877" height="366" key="GridCell.Tab.0.left/0.0.1920.1160@0.0.1920.1160" timestamp="1575914624287" />
+    <state width="1877" height="366" key="GridCell.Tab.0.right" timestamp="1575914624287">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1575400378336" />
-    <state width="1877" height="163" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1575401130413" />
+    <state width="1877" height="366" key="GridCell.Tab.0.right/0.0.1920.1160@0.0.1920.1160" timestamp="1575914624287" />
     <state x="463" y="225" key="SettingsEditor" timestamp="1575559326518">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="463" y="225" key="SettingsEditor/0.0.1920.1160@0.0.1920.1160" timestamp="1575559326518" />
-    <state x="522" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1575563065810">
+    <state x="522" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1575912059160">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="348" y="167" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1575397714673" />
-    <state x="522" y="285" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1575563065810" />
+    <state x="522" y="285" key="com.intellij.ide.util.TipDialog/0.0.1920.1160@0.0.1920.1160" timestamp="1575912059160" />
     <state x="605" y="178" width="709" height="804" key="find.popup" timestamp="1575564893902">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

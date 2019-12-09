@@ -1,7 +1,16 @@
 package com.perlartifex;
 
 public class BlockPoint {
-    int x, y;
+    private int x;
+    private int y;
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 
     BlockPoint(int x, int y) {
         this.x = x;
@@ -9,7 +18,8 @@ public class BlockPoint {
     }
 
     public static int ManhattanDistance( BlockPoint a, BlockPoint b ) {
-        int distance = Math.abs( a.x - b.x ) + Math.abs( a.y - b.y );
+        int distance;
+        distance = Math.abs( a.getX() - b.getX() ) + Math.abs( a.getY() - b.getY() );
         return distance;
     }
 }
