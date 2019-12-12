@@ -18,6 +18,8 @@ public class AdventDay08a {
         String rawData = getTheData();
         List<String> charStrings = Arrays.asList(rawData.split(""));
         List<Integer> theData = new ArrayList<Integer>();
+        Integer[] theDataArray = theData.toArray(Integer[]::new);
+
         for( String datum : charStrings) {
             theData.add(Integer.parseInt(datum));
         }
@@ -60,34 +62,5 @@ public class AdventDay08a {
             System.out.println("Caught an IOException" + foo.toString());
         }
         return pixelData;
-    }
-
-    class FrameData {
-        private int totalOnes = 0;
-        private int totalTwos = 0;
-
-        public int getTotalOnes() {
-            return totalOnes;
-        }
-
-        public void setTotalOnes(int totalOnes) {
-            this.totalOnes = totalOnes;
-        }
-
-        public void incrementTotalOnes(int totalOnes) {
-            this.totalOnes++;
-        }
-
-        public int getTotalTwos() {
-            return totalTwos;
-        }
-
-        public void setTotalTwos(int totalTwos) {
-            this.totalTwos = totalTwos;
-        }
-
-        public void incrementTotalTwos(int totalOnes) {
-            this.totalTwos++;
-        }
     }
 }
