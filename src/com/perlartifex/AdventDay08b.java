@@ -26,24 +26,28 @@ public class AdventDay08b {
 
         for(int i = 0; i < numberOfFrames; i++) {
             for( int n = 0; n < FRAME_PIXELS; n++ ) {
-               int pixel = dataStream[i * FRAME_PIXELS + n];
+                int pixelAddress = i * FRAME_PIXELS + n;
+                //System.out.println(pixelAddress);
+               int pixel = dataStream[pixelAddress];
                 if( workSpace[n] == 2 ) {
                     workSpace[n] = pixel;
                 }
             }
+            System.out.println(Arrays.toString(workSpace));
         }
 
         for(int i = 0; i < FRAME_VERTICAL; i++) {
             for( int n = 0; n < FRAME_HORIZONTAL; n++ ) {
-                int pixel = workSpace[ i * FRAME_VERTICAL + n];
+                int workspaceLocation = i * FRAME_HORIZONTAL + n;
+                int pixel = workSpace[ workspaceLocation];
                 if (pixel == 0) {
-                    System.out.print("B");
+                    System.out.print("M");
                 }
                 else if (pixel == 1) {
-                    System.out.print("W");
+                    System.out.print(" ");
                 }
                 else {
-                    System.out.print("W");
+                    System.out.print(".");
                 }
             }
             System.out.println();
