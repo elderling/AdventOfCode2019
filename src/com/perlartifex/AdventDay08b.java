@@ -41,10 +41,10 @@ public class AdventDay08b {
                 int workspaceLocation = i * FRAME_HORIZONTAL + n;
                 int pixel = workSpace[ workspaceLocation];
                 if (pixel == 0) {
-                    System.out.print("M");
+                    System.out.print(" ");
                 }
                 else if (pixel == 1) {
-                    System.out.print(" ");
+                    System.out.print("*");
                 }
                 else {
                     System.out.print(".");
