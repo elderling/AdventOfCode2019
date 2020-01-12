@@ -16,7 +16,7 @@ public class AdventDay05a {
 
         String pixelData = null;
         try {
-            List<String> content = Files.readAllLines(Paths.get("C:\\Users\\elderling\\Downloads\\Advent_Input_02a.txt"), StandardCharsets.US_ASCII);
+            List<String> content = Files.readAllLines(Paths.get("C:\\Users\\elderling\\Downloads\\Advent_Input_05a.txt"), StandardCharsets.US_ASCII);
             pixelData = content.get(0);
         }
         catch( IOException theException ) {

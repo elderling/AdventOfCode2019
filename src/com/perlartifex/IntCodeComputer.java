@@ -30,10 +30,10 @@ public class IntCodeComputer {
 
         String instructionString = String.format("%05d", instruction);
 
-        int opcode = Integer.parseInt(instructionString.substring(3,4));
-        int param1mode = Integer.parseInt(instructionString.substring(2,2));
-        int param2mode = Integer.parseInt(instructionString.substring(1,1));
-        int param3mode = Integer.parseInt(instructionString.substring(0,0));
+        int opcode = Integer.parseInt(instructionString.substring(3,5));
+        int param1mode = Integer.parseInt(instructionString.substring(2,3));
+        int param2mode = Integer.parseInt(instructionString.substring(1,2));
+        int param3mode = Integer.parseInt(instructionString.substring(0,1));
         while (opcode != HALT) {
             var numberOfParameters = this.instructionLength.get(opcode);
 
